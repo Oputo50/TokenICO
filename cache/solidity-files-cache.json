@@ -2,7 +2,7 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\Acer\\OneDrive\\Ambiente de Trabalho\\ico\\contracts\\Token.sol": {
-      "lastModificationDate": 1656322391628,
+      "lastModificationDate": 1656342801596,
       "contentHash": "b36e47eee6a97b32c954656982dcfc7d",
       "sourceName": "contracts/Token.sol",
       "solcConfig": {
@@ -39,8 +39,8 @@
       ]
     },
     "C:\\Users\\Acer\\OneDrive\\Ambiente de Trabalho\\ico\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
-      "lastModificationDate": 1656250913770,
-      "contentHash": "a9d2146925da52142435d3bb8df53c3c",
+      "lastModificationDate": 1656342805145,
+      "contentHash": "243fcbae5e13f6a21554a7a0c0de81b6",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
         "version": "0.8.2",
@@ -78,8 +78,8 @@
       ]
     },
     "C:\\Users\\Acer\\OneDrive\\Ambiente de Trabalho\\ico\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
-      "lastModificationDate": 1656250914171,
-      "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
+      "lastModificationDate": 1656342805146,
+      "contentHash": "da337b36f786d26e7e0826fa874f8d27",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
         "version": "0.8.2",
@@ -113,8 +113,8 @@
       ]
     },
     "C:\\Users\\Acer\\OneDrive\\Ambiente de Trabalho\\ico\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
-      "lastModificationDate": 1656250914181,
-      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "lastModificationDate": 1656342805155,
+      "contentHash": "7e3e6992395030ccb281dc67c1a8ae2f",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
         "version": "0.8.2",
@@ -150,8 +150,8 @@
       ]
     },
     "C:\\Users\\Acer\\OneDrive\\Ambiente de Trabalho\\ico\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
-      "lastModificationDate": 1656250913604,
-      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "lastModificationDate": 1656342805203,
+      "contentHash": "e7f98c33ad1d39d8a6661bf0804fae36",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
         "version": "0.8.2",
@@ -185,8 +185,8 @@
       ]
     },
     "C:\\Users\\Acer\\OneDrive\\Ambiente de Trabalho\\ico\\contracts\\TokenICO.sol": {
-      "lastModificationDate": 1656339385816,
-      "contentHash": "2afed83c0f7294a7131cf7fb3a529c74",
+      "lastModificationDate": 1656342801597,
+      "contentHash": "164689bfa6c11d04acd58f74d0dc0919",
       "sourceName": "contracts/TokenICO.sol",
       "solcConfig": {
         "version": "0.8.2",
@@ -224,8 +224,8 @@
       ]
     },
     "C:\\Users\\Acer\\OneDrive\\Ambiente de Trabalho\\ico\\node_modules\\@openzeppelin\\contracts\\security\\ReentrancyGuard.sol": {
-      "lastModificationDate": 1656250914483,
-      "contentHash": "92f9448b23a90ea3bb932ee55cc3ccce",
+      "lastModificationDate": 1656342805133,
+      "contentHash": "06901b00ab54269ede95d08052fb4295",
       "sourceName": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
       "solcConfig": {
         "version": "0.8.2",
@@ -259,8 +259,8 @@
       ]
     },
     "C:\\Users\\Acer\\OneDrive\\Ambiente de Trabalho\\ico\\node_modules\\hardhat\\console.sol": {
-      "lastModificationDate": 1656250070198,
-      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "lastModificationDate": 1656342832128,
+      "contentHash": "1f481d21fa74d2937414fe6b27fa5a57",
       "sourceName": "hardhat/console.sol",
       "solcConfig": {
         "version": "0.8.2",
