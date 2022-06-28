@@ -31,3 +31,13 @@ At the moment the following features have been developed:
 - If hard cap is achieved the token sell closes.
 - If soft cap is not achieved the ICO investors are refunded. 
 - Tokens are locked during the next 2 weeks after the ICO ends to prevent Pump & Dump attacks. (The locked period can also be adjusted on code).
+
+
+## Running the project
+
+You can easily run the tests by following these steps:
+
+- Clone repo
+- Run "npm install" on root folder
+- Run npx hardhat test
+
