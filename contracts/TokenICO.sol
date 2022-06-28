@@ -3,12 +3,19 @@ pragma solidity ^0.8.2;
 
 import "./Token.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "hardhat/console.sol";
 
 /// @title TokenICO
 /// @notice Token Initial Coin Offering implementation
 /// @dev Pedro
 contract TokenICO is Token, ReentrancyGuard {
+
+     /**
+     * @notice Using SafeMath library to prevent integer undeflow and overflow
+     */
+    using SafeMath for uint256;
+
     /**
      * @notice ICO administrator
      */
@@ -102,8 +109,8 @@ contract TokenICO is Token, ReentrancyGuard {
         We are also minting the amount of tokens that will be available for sell. 
         */
         startDate = _startDate;
-        endDate = startDate + (40); //You can adapt this value to your needs
-        startTradingDate = endDate + 60; // You can adapt this value to your needs
+        endDate = startDate.add(40); //You can adapt this value to your needs
+        startTradingDate = endDate.add(60); // You can adapt this value to your needs
         icoState = State.beforeRunning;
         admin = msg.sender;
         _mint(address(this), 100000);
@@ -164,7 +171,7 @@ contract TokenICO is Token, ReentrancyGuard {
         raisedAmount += msg.value;
 
         require(raisedAmount <= hardCap, "Ico raised amount was exceeded");
-        uint256 tokens = msg.value / tokenPrice;
+        uint256 tokens = msg.value/tokenPrice;
         _transfer(address(this), msg.sender, tokens);
         emit Invest(msg.sender, msg.value, tokens);
         return true;

@@ -185,8 +185,8 @@
       ]
     },
     "C:\\Users\\Acer\\OneDrive\\Ambiente de Trabalho\\ico\\contracts\\TokenICO.sol": {
-      "lastModificationDate": 1656429338652,
-      "contentHash": "cd54a0a8b429fb24b3a737d1fa1d4800",
+      "lastModificationDate": 1656438274509,
+      "contentHash": "6df7193eaa85b20ead4f0af68391bc2d",
       "sourceName": "contracts/TokenICO.sol",
       "solcConfig": {
         "version": "0.8.2",
@@ -214,6 +214,7 @@
       "imports": [
         "./Token.sol",
         "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
         "hardhat/console.sol"
       ],
       "versionPragmas": [
@@ -291,6 +292,41 @@
       ],
       "artifacts": [
         "console"
+      ]
+    },
+    "C:\\Users\\Acer\\OneDrive\\Ambiente de Trabalho\\ico\\node_modules\\@openzeppelin\\contracts\\utils\\math\\SafeMath.sol": {
+      "lastModificationDate": 1656342805225,
+      "contentHash": "162ccf43242f3d61992c57425c5829cf",
+      "sourceName": "@openzeppelin/contracts/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.2",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
       ]
     }
   }
