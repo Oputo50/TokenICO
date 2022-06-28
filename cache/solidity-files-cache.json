@@ -185,8 +185,8 @@
       ]
     },
     "C:\\Users\\Acer\\OneDrive\\Ambiente de Trabalho\\ico\\contracts\\TokenICO.sol": {
-      "lastModificationDate": 1656342801597,
-      "contentHash": "164689bfa6c11d04acd58f74d0dc0919",
+      "lastModificationDate": 1656429338652,
+      "contentHash": "cd54a0a8b429fb24b3a737d1fa1d4800",
       "sourceName": "contracts/TokenICO.sol",
       "solcConfig": {
         "version": "0.8.2",

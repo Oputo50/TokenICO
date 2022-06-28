@@ -1,4 +1,3 @@
-const { isCommunityResourcable } = require("@ethersproject/providers");
 const { expect, assert } = require("chai");
 const { ethers } = require("hardhat");
 
@@ -6,7 +5,7 @@ const tokenSymbol = "ICO";
 
 const tokenName = "ICO Token";
 
-describe("Token contract", function () {
+describe("TokenICO contract", function () {
   it("Deployment should set the ICO admin, deposit address, Token name and symbol", async function () {
 
     const [admin] = await ethers.getSigners();
@@ -150,12 +149,9 @@ describe("Token contract", function () {
 
     let i2BalanceAfterInvest = await ethers.provider.getBalance(investor2.address);
 
-
-
     for (let index = 0; index < 40; index++) {
       await ethers.provider.send('evm_mine');
     }
-
 
     await tokenIco.connect(investor1).refund({ from: investor1.address });
     await tokenIco.connect(investor2).refund({ from: investor2.address });
@@ -218,5 +214,35 @@ describe("Token contract", function () {
     expect(icoStateAfterResume).to.be.equal(1);
     expect(await ethers.provider.getBalance(tokenIco.address)).to.equal(investAmount);
     
+  })
+
+  it("Should revert if users try to trade tokens before startTradingDate", async() => {
+
+    const [admin, investor] = await ethers.getSigners();
+
+    const startDate = (await ethers.provider.getBlockNumber() + 1);
+
+    const investAmount = ethers.utils.parseEther("1");
+
+    const Ico = await ethers.getContractFactory("TokenICO");
+
+    const tokenIco = await Ico.deploy(startDate, tokenName, tokenSymbol);
+
+    for (let index = 0; index < 30; index++) {
+      await ethers.provider.send('evm_mine');
+    }
+
+    await tokenIco.connect(investor).invest({from: investor.address, value: investAmount});
+
+    await expect(tokenIco.connect(investor).transfer(admin.address,1,{from:investor.address})).to.be.reverted;
+
+    for (let index = 0; index < 80; index++) {
+      await ethers.provider.send('evm_mine');
+    }
+
+    await tokenIco.connect(investor).transfer(admin.address,1,{from:investor.address});
+
+    await expect(await tokenIco.connect(admin).balanceOf(admin.address)).to.equal(1);
+
   })
 });

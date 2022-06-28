@@ -1,0 +1,22 @@
+.exit
+Y
+console.log(tokenIco.connect(await ethers.getSigners()[1]).balanceOf(await ethers.getSigners()[1].address));
+console.log(tokenIco.connect(await ethers.getSigners()[1]).balanceOf())
+ethers.getSigners().then((res) => {console.log(await tokenIco.connect(res[2]).balanceOf(res[2].address))});
+ethers.getSigners().then((res) => {tokenIco.connect(res[2]).invest({ from: res[2].address, value: "2000000000000000000" })});
+ethers.getSigners().then((res) => {tokenIco.connect(res[2]).invest({ from: res[2].address, value: "200000000000" })});
+ethers.getSigners().then(() => {})
+console.log(investor1);
+let investor1 = await ethers.getSigners()[3];
+tokenIco.connect(admin).invest({ from: admin.address, value: "200000000000" });
+tokenIco.connect(investor).invest({ from: investor.address, value: "200000000000" });
+ const [admin, investor] = await ethers.getSigners();
+ const [admin, investor] = await ethers.getSigners
+console.log(await tokenIco.name());
+const tokenIco = await Ico.deploy(startDate, "PAPA", "PP");
+startDate = (await ethers.provider.getBlockNumber());
+const startDate = (await ethers.provider.getBlockNumber() + 20);
+const Ico = await ethers.getContractFactory("TokenICO");
+console.log(ethers)
+const {ethers} = require("hardhat");
+.help
